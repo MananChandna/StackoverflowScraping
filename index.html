@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Overflow Search</title>
+</head>
+<body>
+    <h1>Stack Overflow Search</h1>
+    <form action="/" method="post">
+        <label for="search_tag">Enter a tag to search:</label><br>
+        <input type="text" id="search_tag" name="search_tag"><br><br>
+        <button type="submit">Search</button>
+    </form>
+    {% if data %}
+    <h2>Results for tag: {{ search_tag }}</h2>
+    <table>
+        <tr>
+            <th>Question Title</th>
+            <th>Votes</th>
+            <th>Tags</th>
+        </tr>
+        {% for item in data %}
+        <tr>
+            <td>{{ item.question_title }}</td>
+            <td>{{ item.votes }}</td>
+            <td>{{ item.tags }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+    {% if error_message %}
+    <p>{{ error_message }}</p>
+    {% endif %}
+</body>
+</html>
