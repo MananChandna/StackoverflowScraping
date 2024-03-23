@@ -40,5 +40,7 @@
   <p>To scrape more questions beyond the first page, the script introduces a function <code>scrape_page()</code> that scrapes a single page of questions. It then iterates over multiple pages (specified by the <code>total_pages</code> variable) and prints the extracted data for each page.</p>
   <h2 id="conclusion">Conclusion</h2>
   <p>This script provides a basic framework for scraping Stack Overflow questions based on specific tags. Users can modify it according to their requirements, such as scraping additional details or handling pagination differently. Remember to use web scraping responsibly and adhere to Stack Overflow's terms of service.</p>
+  <h2>Contact</h2>
+    <p>If you have any questions or suggestions regarding this project, feel free to contact me via <a href="https://www.linkedin.com/in/manan-chandna-697588257/">LinkedIn</a>.</p>
 </body>
 </html>
